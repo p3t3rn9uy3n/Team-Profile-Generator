@@ -18,6 +18,8 @@
   "homepage": "https://github.com/p3t3rn9uy3n/Team-Profile-Generator#readme",
   "dependencies": {
     "fs": "0.0.1-security",
-    "require": "^2.4.20"
+    "inquirer": "^8.0.0",
+    "require": "^2.4.20",
+    "util": "^0.12.3"
   }
 }

@@ -5,6 +5,7 @@ const manager = require('.lib/manager');
 const engineer = require('.lib/engineer');
 const intern = require('.lib/intern');
 const employee = require('.lib/employee');
+const genMarkdown = require('./utils/generateMarkdown');
 
 
 // manager question array
@@ -40,3 +41,12 @@ const questions = [
         ]
     },
 ];
+
+function init() {
+    inquirer.prompt(questions)
+    .then((info) => {
+        writeToFile('./src/index.html' , genMarkdown(info))
+    })
+}
+
+init();
