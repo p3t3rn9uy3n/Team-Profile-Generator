@@ -4,6 +4,8 @@ const util = require('util')
 const manager = require('.lib/manager');
 const engineer = require('.lib/engineer');
 const intern = require('.lib/intern');
+const employee = require('.lib/employee');
+
 
 // manager question array
 const questions = [
